@@ -24,7 +24,8 @@
           <div class="grid-item">
             <div class="experience">
               <p>"<%= e.body %>"</p>
-              <p class="right"><i>Age <%= e.age %>, <%= e.school %></i></p>
+              <p class="right"><i>Age <%= e.age %>
+                <% if !e.school.blank? %>,<% end %> <%= e.school %></i></p>
             </div>     
           </div>
         <% end %>
