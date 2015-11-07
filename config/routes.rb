@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'experiences#index'
 
+  resources :experiences, only: [:index]
+
   get  '/neighborhoods' => 'home#neighborhoods'
 
 
