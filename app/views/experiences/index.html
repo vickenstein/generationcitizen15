@@ -35,7 +35,7 @@
       <div id="experience-form">
         <h2>Share your experience.</h2>
         <%= form_for @experience do |f| %>
-          <%= f.label "How does violence affect your school community?" %>
+          <%= f.label "How has violence affected you or your community?" %>
           <%= f.text_area :body, class: "form-control", rows: 6 %>
 
           <div class="row">
@@ -44,7 +44,7 @@
               <%= f.number_field :age, class: "form-control" %>
             </div>
             <div class="col-sm-8">
-              <%= f.label :school %>
+              <%= f.label "School (optional)" %>
               <%= f.text_field :school, class: "form-control" %>
             </div>   
           </div>
