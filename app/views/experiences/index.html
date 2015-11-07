@@ -2,19 +2,25 @@
 
   <div class="intro">
     <h1>Coping with violence in our communities</h1>
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</p>
   </div>
 
   <div class="row">
     <div class="col-md-6">
-      <h3>Violence in our city</h3>
-      <div id="map"></div>
+      <p>One of the causes of Mental Health amongst adolescents can tie back to the violence they experience in their communities. School being where adolescents  spend most of their day, providing help and support can be beneficial in the long run. The U.S. Surgeon General estimates that 20% of American children have a diagnosable mental disorder, and only 20% of that group receives treatment. (1999) When mental health services are sited in schools, children are much more likely to receive the care they need.</p>
+
+      <p>How can we begin to  provide support for coping with violence within our communities? This website provides an interactive way to Share your experience and begin to gain support needed.</p>
     </div>
     <div class="col-md-6">
-      <h3>Read experiences from Boston students</h3>
-      <div class="experiences-list row">
+      <div id="map"></div>
+    </div>
+  </div>
+  <div class="row">
+    <h3>Read experiences from Boston students</h3>
+    <div class="col-md-6">
+      <div class="experiences-list grid">
+        <div class="grid-sizer"></div>
         <% @experiences.each do |e| %>
-          <div class="col-sm-6">
+          <div class="grid-item">
             <div class="experience">
               <p>"<%= e.body %>"</p>
               <p class="right"><i>Age <%= e.age %>, <%= e.school %></i></p>
@@ -22,7 +28,9 @@
           </div>
         <% end %>
       </div>
+    </div>
 
+    <div class="col-md-6">
       <div id="experience-form">
         <h3>Share your experience.</h3>
         <h5>How does violence affect your school community?</h5>
@@ -49,3 +57,11 @@
   </div>
 </div>
 </div>
+
+<script type="text/javascript">
+  $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 50
+  });
+</script>

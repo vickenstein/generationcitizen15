@@ -16,6 +16,7 @@ gem 'bootstrap-sass'
 gem 'slim-rails'
 gem 'twitter'
 gem 'webshims-rails',                '~> 1.15.6.4'
+gem 'masonry-rails'
 
 group :production, :staging do
   gem 'uglifier',                    '>= 1.3.0'

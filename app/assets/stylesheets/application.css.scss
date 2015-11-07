@@ -35,7 +35,7 @@ textarea, input {
 }
 
 #map {
-  min-height: 500px;
+  min-height: 300px;
 }
 
 
@@ -48,7 +48,7 @@ textarea, input {
 }
 
 .experiences-list {
-  height: 180px;
+  height: 280px;
   overflow: scroll;
 }
 
@@ -72,6 +72,6 @@ textarea, input {
   text-align: right;
 }
 
-.intro {
-  text-align: center;
+.grid-sizer, .grid-item {
+  width: 40%;
 }
