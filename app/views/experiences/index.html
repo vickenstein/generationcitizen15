@@ -1,10 +1,10 @@
 <div class="container grey">
 
-  <div class="intro">
+  <div class="title">
     <h1>Coping with violence in our communities</h1>
   </div>
 
-  <div class="row">
+  <div class="row intro">
     <div class="col-md-6">
       <p>One of the causes of Mental Health amongst adolescents can tie back to the violence they experience in their communities. School being where adolescents  spend most of their day, providing help and support can be beneficial in the long run. The U.S. Surgeon General estimates that 20% of American children have a diagnosable mental disorder, and only 20% of that group receives treatment. (1999) When mental health services are sited in schools, children are much more likely to receive the care they need.</p>
 
@@ -32,25 +32,24 @@
 
     <div class="col-md-6">
       <div id="experience-form">
-        <h3>Share your experience.</h3>
-        <h5>How does violence affect your school community?</h5>
+        <h2>Share your experience.</h2>
         <%= form_for @experience do |f| %>
-
+          <%= f.label "How does violence affect your school community?" %>
           <%= f.text_area :body, class: "form-control" %>
 
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
               <%= f.label :age %>
               <%= f.number_field :age, class: "form-control" %>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-8">
               <%= f.label :school %>
               <%= f.text_field :school, class: "form-control" %>
             </div>   
           </div>
 
           <div class="center">
-            <%= f.submit "Share", class: "btn btn-info" %>
+            <%= f.submit "Share", class: "btn btn-info form-control" %>
           </div>
         <% end %> 
       </div> 

@@ -1,7 +1,7 @@
 class ExperiencesController < ApplicationController
 
   def index
-    @experiences = Experience.all
+    @experiences = Experience.all.order(created_at: :desc)
     @experience = Experience.new
   end
 
