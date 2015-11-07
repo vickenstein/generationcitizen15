@@ -4,6 +4,10 @@ class HomeController < ApplicationController
 
   end
 
+  def neighborhoods
+    render json: File.read("app/assets/jsons/bos_neighborhoods.json")
+  end
+
   # def twitter_client
   #   client = Twitter::REST::Client.new do |config|
   #     config.consumer_key    = ENV['TWITTER_APP_ID']

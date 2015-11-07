@@ -59,6 +59,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     font-awesome-rails (4.4.0.0)
       railties (>= 3.2, < 5.0)
+    geokit (1.10.0)
     handlebars_assets (0.21.0)
       execjs (~> 2.0)
       multi_json (~> 1.0)
@@ -661,6 +662,7 @@ DEPENDENCIES
   bootstrap-sass
   d3-rails
   font-awesome-rails
+  geokit
   handlebars_assets
   jquery-rails
   jquery-timepicker-addon-rails (~> 1.4.1)

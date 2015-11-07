@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'd3-rails'
 gem 'font-awesome-rails'
+gem 'geokit'
 gem 'jquery-rails'
 gem 'jquery-timepicker-addon-rails', '~> 1.4.1'
 gem 'jquery-ui-rails'

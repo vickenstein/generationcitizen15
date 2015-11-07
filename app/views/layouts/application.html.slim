@@ -5,7 +5,7 @@ html
       | Generation Citizen 15
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag 'application', media: 'all'
-    script async=true defer=true src="//maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_API_KEY']}&callback=initMap"
+    script async=true defer=true src="//maps.googleapis.com/maps/api/js?callback=initMap"
 
     = csrf_meta_tags
   body
