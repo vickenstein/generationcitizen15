@@ -1,0 +1,9 @@
+doctype html
+html
+head
+  title
+    | Generation Citizen 15
+  = stylesheet_link_tag 'application', media: 'all'
+  = csrf_meta_tags
+body
+  = yield
