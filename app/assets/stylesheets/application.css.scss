@@ -1,3 +1,4 @@
+@import 'bootstrap';
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -14,10 +15,63 @@
  *= require_self
  */
 
+
+$turquoise: #3da4ab;
+$light-turquoise: #3DA4AB;
+$bg: #4A4E4D;
+$highlight-one: #F6CD61;
+$highlight-two: #FE8A71;
+
 html, body { 
   height: 100%;
 }
 
+textarea, input {
+  margin-bottom: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
 #map {
-  height: 100%;
+  min-height: 500px;
+}
+
+
+#experience-form {
+  background: $highlight-one;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+
+}
+
+.experiences-list {
+  height: 180px;
+  overflow: scroll;
+}
+
+.short {
+  width: 50%;
+}
+
+.experience {
+  background: whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.inline {
+  display: inline-block;
+  width: auto;
+}
+
+.right {
+  text-align: right;
+}
+
+.intro {
+  text-align: center;
 }
